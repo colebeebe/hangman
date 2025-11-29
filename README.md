@@ -1,8 +1,8 @@
 # Overview
 
-{Provide a description of the software that you wrote to demonstrate the Rust language.}
+This project is a simple console-based hangman game written in the Rust language.
 
-{Describe your purpose for writing this software.}
+The purpose for writing this project was to begin learning Rust, as previous to this I had never even seen the syntax for Rust, nor had I any previous knowledge as to any of its mechanics. As part of this project, I have included the simple programs I wrote while learning the language, found in each of the directories. They can all be run in the same way that the main project is run (as detailed below) by navigating to their respective directory instead of the hangman directory, which houses the main project.
 
 [Software Demo Video](https://youtu.be/mhxfW6VZmPA)
 
