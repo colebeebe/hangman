@@ -14,16 +14,22 @@ The project was written in Rust, which deals strongly with ownership. All variab
 
 The only library that was used outside of `std` was `rand`, for choosing a random index in the list of words.
 
+## Running the project
+
 To run the project, first install rustup.
 
-On macOS or Linux:
+### On macOS or Linux
 
 In the terminal run the following command:
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+### On Windows
+
 On Windows, the installer must be downloaded from [the Rust website](https://www.rust-lang.org/tools/install).
+
+### Once rustup is installed
 
 With rustup installed, you will want to make sure that cargo is installed:
 
