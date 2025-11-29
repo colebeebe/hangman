@@ -46,11 +46,26 @@ fn let_user_guess() -> char {
 }
 
 fn play_game(word: &String) {
-    let mut decoded_word = "_ ".repeat(word.chars().count());
-    println!("Word: {}", decoded_word);
+    let mut decoded_word: Vec<char> = "_".repeat(word.chars().count()).chars().collect();
 
-    let guess = let_user_guess();
-    println!("Your guess: {}", guess);
+    while decoded_word.contains(&'_') {
+        for c in &decoded_word {
+            print!("{} ", c);
+        }
+        println!();
+        let guess = let_user_guess();
+        for (i, c) in word.chars().enumerate() {
+            if c == guess {
+                decoded_word[i] = guess;
+            }
+        }
+        println!("Your guess: {}", guess);
+    }
+
+    for c in &decoded_word {
+        print!("{} ", c);
+    }
+    println!();
 }
 
 
