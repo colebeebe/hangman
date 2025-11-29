@@ -14,6 +14,37 @@ The project was written in Rust, which deals strongly with ownership. All variab
 
 The only library that was used outside of `std` was `rand`, for choosing a random index in the list of words.
 
+To run the project, first install rustup.
+
+On macOS or Linux:
+
+In the terminal run the following command:
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+On Windows, the installer must be downloaded from [the Rust website](https://www.rust-lang.org/tools/install).
+
+With rustup installed, you will want to make sure that cargo is installed:
+
+```
+cargo --version
+```
+
+which should return something like this:
+
+```
+cargo X.XX.X
+```
+
+With cargo installed, navigate to the hangman folder in the terminal and run:
+
+```
+cargo run
+```
+
+The console application should then run, and you can play the game.
+
 # Useful Websites
 
 - [Learn Rust](https://doc.rust-lang.org/book/) (Book from the Rust website)
